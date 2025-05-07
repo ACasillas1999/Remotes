@@ -37,7 +37,7 @@ textarea {
 }
 
 input[type="submit"] {
-    background-color: green;
+    background-color: rgb(190, 0, 0);
     color: #fff;
     padding: 10px 20px;
     border: none;
