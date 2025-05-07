@@ -1,0 +1,303 @@
+/* Estilo general para todo el sitio */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(-45deg, #00266C, #FF6900, #00266C, #FF6900);
+    background-size: 400% 400%;
+    animation: fondoAnimado 25s ease infinite;
+    color: #fff;
+    min-height: 100vh;
+}
+
+
+/* Encabezado */
+h1 {
+    text-align: center;
+   
+    color: white;
+    padding: 20px;
+}
+
+/* Formulario de agregar y editar productos */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/* Tabla de productos */
+
+
+
+
+
+/* Mensajes de éxito o error */
+.success, .error {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/*boton de retroceder en agregar.php*/
+
+/* Estilo para el botón de "Volver al listado" */
+button.btn-volver {
+    background-color: #2196F3; /* Azul brillante */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efectos suaves */
+    display: inline-block;
+}
+
+button.btn-volver:hover {
+    background-color: #1976D2; /* Azul oscuro */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+button.btn-volver:active {
+    background-color: #1565C0; /* Azul aún más oscuro */
+}
+
+/* Estilo para centrar el botón */
+.boton-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin: 20px; /* Espacio superior */
+    
+
+}
+
+.botones-wrapper {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin: 20px 0;
+}
+
+
+/* Estilo para centrar el botón de "Agregar nuevo producto" */
+.boton-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin-bottom: 20px; /* Espacio debajo del botón */
+}
+
+/* Estilo para el botón "Agregar nuevo producto" */
+button.btn-agregar {
+    background-color: #4CAF50; /* Verde brillante */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efectos suaves */
+    display: inline-block;
+}
+
+button.btn-agregar:hover {
+    background-color: #45a049; /* Verde oscuro */
+    transform: scale(1.05); /* Le da un pequeño efecto de aumento al pasar el ratón */
+}
+
+button.btn-agregar:active {
+    background-color: #388e3c; /* Verde más oscuro */
+}
+
+
+/* Contenedor general del formulario */
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Estilo del formulario */
+.formulario {
+    background: rgba(255, 255, 255, 0.15); /* Fondo semitransparente */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
+    border-radius: 12px;
+    padding: 30px;
+    width: 700px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Difumina el fondo detrás */
+    -webkit-backdrop-filter: blur(10px); /* Soporte para Safari */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #fff; /* Texto blanco para contraste */
+}
+/* Estilo de etiquetas */
+.formulario label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo de campos */
+.formulario input,
+.formulario select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botón de guardar */
+button.btn-guardar {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-guardar:hover {
+    background-color: #388e3c;
+}
+
+@keyframes fondoAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.formulario input,
+.formulario select {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+
+.contenedor-tabla {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    overflow-x: auto;
+    overflow-y: auto;
+    max-height: 500px; 
+     /* Centramos el contenedor */
+     display: flex;
+     justify-content: center;
+     margin: 0 auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+th {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+/* Logo en la esquina superior izquierda */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 280px; /* Ajusta el tamaño del logo */
+    height: auto;
+    z-index: 100; /* Asegúrate de que quede sobre otros elementos */
+}
+
+/* Asegura que el body ocupe toda la altura disponible */
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Pie de página fijo, centrado y al fondo */
+  .site-footer {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 20%;
+    max-width: 500px;        /* opcional, para limitar el ancho */
+    padding: 5px 0;
+    background: rgba(0, 0, 0, 0.363);
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+ 
+
