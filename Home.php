@@ -34,6 +34,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
         <!--<li><a href="Toner.php">Toner</a></li>-->
      <!--   <li><a href="Toner.php">Toner</a></li>-->
      <li><a href="/Remotes/Registrar">Nuevo Usuario</a></li>  
+     <li><a href="/Remotes/Inventario/Index.php">Inventario</a></li>  
      <!--   <div class="reg-button">
         <form action="/Remotes/Registrar" method="post">
             <input type="submit" value="Nuevo Usuario">
@@ -96,7 +97,7 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 </div>
 
 <!-- Script de JavaScript -->
-<!-- Script de JavaScript -->
+
 <script>
 document.addEventListener("DOMContentLoaded", function() {
     const sucursalSelect = document.getElementById("sucursal");
