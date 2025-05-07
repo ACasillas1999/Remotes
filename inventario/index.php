@@ -24,6 +24,7 @@ $resultado = $conexion->query($sql);
     <meta charset="UTF-8">
     <title>Inventario</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" type="image/png" href="/Remotes/Img/R.png">
 </head>
 <body>
 <img src="assets/img/logo ascencio.png" alt="Logo de la Empresa" class="logo">
